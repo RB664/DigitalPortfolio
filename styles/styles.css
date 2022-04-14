@@ -56,7 +56,7 @@ li a:hover:not(.active) {
 
 body {
     
-    background-image: url("../pictures/Stars.png");
+    background-image: url("../images/Stars.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
