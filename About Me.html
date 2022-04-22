@@ -6,10 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Digital Portfolio of Ridhaa Benjamin</title>
+    <style>
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          border-right: 1px solid #bbb;
+        }
+        
+        .navbar a {
+          float: right;
+          font-size: xx-large;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          border-right: 1px solid #bbb;
+          
+        }
+        
+        .dropdown {
+          float: right;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          font-size: xx-large;  
+          border-right: 1px solid #bbb;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: #111;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
 </head>
 <body>
     <header>
-    <nav>
+    <!-- <nav id="menu">
         <ul>
             <li>
                 <a href="./Contact.html">Contact</a>
@@ -26,14 +90,62 @@
             <li>
                 <a href="./index.html">Home</a>
             </li>
+            
         </ul>
-    </nav>
+    </nav> -->
+    <div class="navbar">
+        <a href="./Contact.html">Contact</a>
+        <a href="./Projects.html">Projects</a>
+        <a href="./Resume.html">Resume</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Me
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Interests">Interests</a>
+                <a href="#Hobbies">Hobbies</a>
+                <a href="#My Skills">My Skills</a>
+            </div>
+        </div>
+        <a href="./index.html">Home</a>
+    </div>
     </header>
-    <main>
+    <img  id="About-img" src="./images/Ridhaa (4).JPG" alt="Ridhaa">
+    <h1 class="h1-Who">Hi I am Ridhaa Benjamin</h1>
+    <main class="about-main">
+      <section id="Interests">
+        <h1>Interests</h1>
+        <p class="solid">
+            I am very Passionate about technology,espically computers.
+            My passion for computers came using one since I was a kid.
+            As a kid I'd play video games on it,watch movies and listen to music all on my computer.
+            My father fixes computers so as a kid I use to watch my father fix hardware and software problems.
+            I alwaysed found it interesting and decided as a kid that I am going to work with computers.
+        </p>
+      </section>
+      <section id="Hobbies">
+        <h1>Hobbies</h1>
+        <p class="solid">
+            I love playing Video Games and Watching Anime
+        </p> 
+      </section>
+      <section id="My Skills">
+          <h1>My Skills</h1>
+        <p>HTML</p>
+        <div class="container">
+        <div class="skills html">10%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+        <div class="skills css">10%</div>
+        </div>
+      </section>
         
+       
     </main>
-    <footer>
-    
+    <footer class="about-footer">
+        Ridhaa Benjamin Copyright &copy;2022
     </footer>
 </body>
 </html>
