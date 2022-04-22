@@ -69,6 +69,57 @@
         .dropdown:hover .dropdown-content {
           display: block;
         }
+        .container {
+            background-color: rgba(177, 211, 241, 0.2);
+            width: 360px;
+            height: 360px;
+            border-radius: 25%;
+            margin: 20px auto;
+        }
+        #card{
+            width: 360px;
+            height: 360px;
+            position: relative;
+            text-align: center;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+        .container:hover #card{
+            transform: rotateY(180deg);
+        }
+        #front, #back {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 20%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+}
+        #front{
+            background-color: darkgoldenrod;
+        }
+        #back{
+            background-color: rgb(79, 68, 47);
+            color: white;
+            transform: rotateY(180deg);
+        }
+        /* #rightbox{
+          display: inline;
+        }
+
+        #leftbox{
+          display: inline;
+        } */
+        #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        img{
+          width: 360px;
+          height: 360px;
+        }
         </style>
 </head>
 <body>
@@ -105,6 +156,7 @@
                 <a href="#Interests">Interests</a>
                 <a href="#Hobbies">Hobbies</a>
                 <a href="#My Skills">My Skills</a>
+                <a href="#Testimonials">Testimonials</a>
             </div>
         </div>
         <a href="./index.html">Home</a>
@@ -129,19 +181,51 @@
             I love playing Video Games and Watching Anime
         </p> 
       </section>
+  
       <section id="My Skills">
           <h1>My Skills</h1>
         <p>HTML</p>
-        <div class="container">
+        <div class="containerbar">
         <div class="skills html">10%</div>
         </div>
 
         <p>CSS</p>
-        <div class="container">
+        <div class="containerbar">
         <div class="skills css">10%</div>
         </div>
       </section>
+      <br>
+      <section id="Testimonials">
+        <h1>Testimonials</h1>
+        <div id="wrapper">
+        <div class="container">
+          <div id="card">
+           <div id="front">
+            <h2>Raees</h2>
+            <img src="./images/Raees (3).JPG" alt="Raees">
+          </div>
         
+        <div id="back">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati eius sunt, nesciunt quia ad laboriosam reiciendis a excepturi, voluptatibus laborum totam temporibus non, reprehenderit aut dicta cumque ex facilis.</p>
+            </div>
+          </div>
+        </div>
+     
+
+      <div class="container">
+        <div id="card">
+        <div id="front">
+          <h2>Saleem</h2>
+          <img src="./images/Saleem (1).JPG" alt="Saleem">
+      
+      <div id="back">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolorem totam, quaerat ab, natus excepturi deserunt autem accusamus dolores tenetur repellat explicabo! Deserunt repellendus facere, ab itaque tenetur repellat ipsum.</p>
+       </div>
+      </div>
+      </div>
+    </div>
+  </div>
+      </section>
        
     </main>
     <footer class="about-footer">

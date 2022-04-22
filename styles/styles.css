@@ -247,7 +247,7 @@ img{
 
   * {box-sizing: border-box}
 
-.container {
+.containerbar {
   width: 1000px;
   background-color: #ddd;
 }
